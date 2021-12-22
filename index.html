@@ -7,16 +7,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Di choi Noel voi to khong?</title>
   <link href="style.less" type="text/css" rel="stylesheet/less" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   <link href="snow.css" rel="stylesheet" />
   <script>
     less = {
       logLevel: 0
     }
   </script>
-  <script src="https://cdn.jsdelivr.net/npm/less@4.1.1" ></script>
+  <script src="https://cdn.jsdelivr.net/npm/less@4.1.1"></script>
 </head>
 
 <body>
+  <div class="background-audio" id="bgAudio-container">
+  </div>
   <div id="snowContainer" class="snow-contaiwner"></div>
   <div id="mainContainer" class="main-container">
     <div class="ask" id="txtAsk"></div>
