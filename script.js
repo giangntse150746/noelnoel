@@ -85,11 +85,12 @@ async function clickYes() {
   txtAsk.innerHTML = '<span class="bg-white">Đồng ý rồi nha ^^</span>';
   var url = new URL(window.location);
   const profile = url.searchParams.get('fbid');
-  if (profile.length > 0) {
+  if (profile) {
     setTimeout(window.location.href = `https://fb.com/${profile}`, 3000);
   } else {
     const message = url.searchParams.get('meid');
-    setTimeout(window.location.href = `https://m.me/${profile}`, 3000);
+    if (message)
+      setTimeout(window.location.href = `https://m.me/${profile}`, 3000);
   }
 }
 
